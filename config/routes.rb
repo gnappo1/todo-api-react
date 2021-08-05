@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'current_user/index'
   get '/current_user', to: 'current_user#index'
   get 'private/test'
+  resources :todos
   
   devise_for :users, path: '', path_names: {
     sign_in: 'login',
@@ -12,6 +13,5 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
-  resources :todos
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
