@@ -27,6 +27,7 @@ gem 'rack-cors'
 gem 'active_model_serializers'
 gem 'devise'
 gem 'devise-jwt'
+gem 'active_storage_validations'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
